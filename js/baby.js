@@ -60,18 +60,19 @@ babyObj.prototype.draw = function () {
     }
 
     //baby body 身体变白
-    this.babyBodyTimer += 15;
-    if (this.babyBodyTimer > 300) {
-        this.babyBodyCount = (this.babyBodyCount + 1);
-        this.babyBodyTimer %= 300;
-        if (this.babyBodyCount > 19) {
-            this.babyBodyCount = 19;
-            // game over
-            data.gameOver = true;
+    if(gameBegin){
+        this.babyBodyTimer += 15;
+        if (this.babyBodyTimer > 300) {
+            this.babyBodyCount = (this.babyBodyCount + 1);
+            this.babyBodyTimer %= 300;
+            if (this.babyBodyCount > 19) {
+                this.babyBodyCount = 19;
+                // game over
+                data.gameOver = true;
+            }
         }
-
     }
-
+    
     //ctx1
     ctx1.save();
     ctx1.translate(this.x, this.y);
