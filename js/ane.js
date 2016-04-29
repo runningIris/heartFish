@@ -32,5 +32,5 @@ aneObj.prototype.draw = function () {
         ctx2.quadraticCurveTo(this.rootx[i], canHeight - 150, this.headx[i], this.heady[i]);
         ctx2.stroke();
     }
-    ctx2.restore;
+    ctx2.restore();
 }
