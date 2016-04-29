@@ -1,7 +1,7 @@
 //判断大鱼和果实的距离
 function momFruitsCollision()
 {
-    if(!data.gameOver && gameBegin)
+    if(!data.gameOver)
     {    
         for(var i = 0; i < fruit.num; i++)
         {
@@ -32,7 +32,7 @@ function momFruitsCollision()
 // mom baby collision
 function momBabyCollision()
 {
-    if(data.fruitNum >0 && !data.gameOver && gameBegin){
+    if(data.fruitNum >0 && !data.gameOver){
         var l = calLength2(mom.x, mom.y, baby.x, baby.y);
         if(l < 900)
         {
