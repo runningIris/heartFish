@@ -11,15 +11,14 @@ introObj.prototype.init = function () {
     this.y = 80;
     this.width = 500;
     this.height = 400;
-    this.rules[0] = "               Game Rules:"
-    this.rules[1] = "# the mouse controls the momfish's movement;";
-    this.rules[2] = "# momfish eats blue fruits and orange fruits;";
-    this.rules[3] = "# momfish feeds the babyfish before its body ";
-    this.rules[4] = "   becomes completely white;";
-    this.rules[5] = "# if babyfish's body becomes completely white,";
-    this.rules[6] = "   it is starved to death and the game is over;";
-    this.rules[7] = "#scoring system: orange fruit = 10 points,";
-    this.rules[8] = "                         blue fruit = 20 points";
+    this.rules[0] = "               游戏规则"
+    this.rules[1] = "# 鼠标控制鱼妈妈的运动;";
+    this.rules[2] = "# 鱼妈妈可以吃红色和蓝色的果实;";
+    this.rules[3] = "# 在鱼宝宝完全变白之前";
+    this.rules[4] = "   鱼妈妈必须要喂鱼宝宝";
+    this.rules[5] = "# 如果鱼宝宝的身体变白了，那它就死翘翘了";
+    this.rules[6] = "   活活被你饿死的！";
+    this.rules[7] = "# 分数系统: 红色 = 10分； 蓝色20分";
 }
 
 introObj.prototype.draw = function () {
